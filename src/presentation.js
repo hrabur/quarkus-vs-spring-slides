@@ -15,7 +15,6 @@ import {
 import createTheme from "spectacle/lib/themes/default";
 import preloader from "spectacle/lib/utils/preloader";
 import PlovDevSlide from "./components/PlovDevSlide";
-import Milestone from "./components/Milestone";
 
 require("normalize.css");
 const theme = createTheme(
