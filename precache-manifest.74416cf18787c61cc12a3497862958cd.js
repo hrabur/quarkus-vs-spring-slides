@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/quarkus-vs-spring-slides/static/media/plovdev-logo-light.f4e8ffea.svg"
   },
   {
-    "revision": "ef0aacc8fcd7edc72640",
-    "url": "/quarkus-vs-spring-slides/static/js/main.ef0aacc8.chunk.js"
+    "revision": "70f6f746168f8b9bc30e",
+    "url": "/quarkus-vs-spring-slides/static/js/main.70f6f746.chunk.js"
   },
   {
     "revision": "565b154761b0814a473f4a6cebae03f9",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/quarkus-vs-spring-slides/static/media/plovdev-logo-dark.8dec3d69.png"
   },
   {
-    "revision": "30a3f568eb7f58768a14258f7e4c2af8",
-    "url": "/quarkus-vs-spring-slides/static/media/cloud-computing-timeline.30a3f568.png"
+    "revision": "aa7e525a90efabc181d724d5c655be89",
+    "url": "/quarkus-vs-spring-slides/static/media/cloud-computing-timeline.aa7e525a.png"
   },
   {
     "revision": "e7aef24d75012d07fb7de5b6d5ed80ae",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/quarkus-vs-spring-slides/static/css/1.702afedd.chunk.css"
   },
   {
-    "revision": "564c06d04af77278cf26cd30c18966cc",
+    "revision": "bbcffbfafb258c0f12a84fce06e6375a",
     "url": "/quarkus-vs-spring-slides/index.html"
   }
 ];
