@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/quarkus-vs-spring-slides/static/media/plovdev-logo-light.f4e8ffea.svg"
   },
   {
-    "revision": "80a0be296e720ab5dfa0",
-    "url": "/quarkus-vs-spring-slides/static/js/main.80a0be29.chunk.js"
+    "revision": "ef0aacc8fcd7edc72640",
+    "url": "/quarkus-vs-spring-slides/static/js/main.ef0aacc8.chunk.js"
   },
   {
     "revision": "565b154761b0814a473f4a6cebae03f9",
@@ -32,15 +32,15 @@ self.__precacheManifest = [
     "url": "/quarkus-vs-spring-slides/static/media/quarkus-logo.8faf63c4.svg"
   },
   {
-    "revision": "e32ca4cbbd4292774444",
-    "url": "/quarkus-vs-spring-slides/static/js/1.e32ca4cb.chunk.js"
+    "revision": "fe1edfefe25828384a0c",
+    "url": "/quarkus-vs-spring-slides/static/js/1.fe1edfef.chunk.js"
   },
   {
-    "revision": "e32ca4cbbd4292774444",
+    "revision": "fe1edfefe25828384a0c",
     "url": "/quarkus-vs-spring-slides/static/css/1.702afedd.chunk.css"
   },
   {
-    "revision": "dc55b7fd65334b2a03d4c296725195ce",
+    "revision": "564c06d04af77278cf26cd30c18966cc",
     "url": "/quarkus-vs-spring-slides/index.html"
   }
 ];

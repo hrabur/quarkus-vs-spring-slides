@@ -1,9 +1,9 @@
 {
-  "main.js": "/quarkus-vs-spring-slides/static/js/main.80a0be29.chunk.js",
-  "main.js.map": "/quarkus-vs-spring-slides/static/js/main.80a0be29.chunk.js.map",
+  "main.js": "/quarkus-vs-spring-slides/static/js/main.ef0aacc8.chunk.js",
+  "main.js.map": "/quarkus-vs-spring-slides/static/js/main.ef0aacc8.chunk.js.map",
   "static/css/1.702afedd.chunk.css": "/quarkus-vs-spring-slides/static/css/1.702afedd.chunk.css",
-  "static/js/1.e32ca4cb.chunk.js": "/quarkus-vs-spring-slides/static/js/1.e32ca4cb.chunk.js",
-  "static/js/1.e32ca4cb.chunk.js.map": "/quarkus-vs-spring-slides/static/js/1.e32ca4cb.chunk.js.map",
+  "static/js/1.fe1edfef.chunk.js": "/quarkus-vs-spring-slides/static/js/1.fe1edfef.chunk.js",
+  "static/js/1.fe1edfef.chunk.js.map": "/quarkus-vs-spring-slides/static/js/1.fe1edfef.chunk.js.map",
   "runtime~main.js": "/quarkus-vs-spring-slides/static/js/runtime~main.c2377e69.js",
   "runtime~main.js.map": "/quarkus-vs-spring-slides/static/js/runtime~main.c2377e69.js.map",
   "static/media/plovdev-logo-dark.png": "/quarkus-vs-spring-slides/static/media/plovdev-logo-dark.8dec3d69.png",
@@ -14,6 +14,6 @@
   "static/media/plovdev-logo-light.svg": "/quarkus-vs-spring-slides/static/media/plovdev-logo-light.f4e8ffea.svg",
   "static/css/1.702afedd.chunk.css.map": "/quarkus-vs-spring-slides/static/css/1.702afedd.chunk.css.map",
   "index.html": "/quarkus-vs-spring-slides/index.html",
-  "precache-manifest.80c5b12fe00e030de3d5222003554d5d.js": "/quarkus-vs-spring-slides/precache-manifest.80c5b12fe00e030de3d5222003554d5d.js",
+  "precache-manifest.ac259873aaad618eac120cfb5aaadf66.js": "/quarkus-vs-spring-slides/precache-manifest.ac259873aaad618eac120cfb5aaadf66.js",
   "service-worker.js": "/quarkus-vs-spring-slides/service-worker.js"
 }
