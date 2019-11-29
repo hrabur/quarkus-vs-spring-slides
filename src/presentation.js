@@ -5,7 +5,7 @@ import {
   Text,
   Fit,
   Layout,
-  Markdown,
+  Image,
   Table,
   TableHeader,
   TableHeaderItem,
@@ -15,7 +15,9 @@ import {
   Link,
   Appear,
   List,
-  ListItem
+  ListItem,
+  Fill,
+  Markdown
 } from "spectacle";
 import createTheme from "spectacle/lib/themes/default";
 import preloader from "spectacle/lib/utils/preloader";
@@ -40,7 +42,12 @@ const images = {
   springLogo: require("./img/spring-logo.svg"),
   quarkusLogo: require("./img/quarkus-logo.svg"),
   cloudComputingTimeline: require("./img/cloud-computing-timeline.png"),
-  cloudComputingServices: require("./img/cloud-computing-services.svg")
+  cloudComputingServices: require("./img/cloud-computing-services.svg"),
+  truthJavaContainers: require("./img/truth-java-containers.png"),
+  historicalEnterpriseStack: require("./img/historical-enterprise-stack.png"),
+  moderEenterpriseStack: require("./img/modern-enterprise-stack.png"),
+  newTruthJavaContainers: require("./img/new-truth-java-containers.png"),
+  quarkusMetrics: require("./img/quarkus-metrics.png")
 };
 
 preloader(images);
@@ -80,6 +87,68 @@ export default class Presentation extends React.Component {
           textColor="tertiary"
           bgImage={images.cloudComputingServices}
         ></PlovDevSlide>
+        <PlovDevSlide
+          transition={["fade"]}
+          textColor="tertiary"
+          title="Enterprise Java Stack"
+        >
+          <Image src={images.historicalEnterpriseStack} />
+        </PlovDevSlide>
+        <PlovDevSlide
+          transition={["fade"]}
+          textColor="tertiary"
+          title="Cloud Java Stack"
+        >
+          <Image src={images.moderEenterpriseStack} />
+        </PlovDevSlide>
+        <PlovDevSlide
+          transition={["fade"]}
+          textColor="tertiary"
+          title="Truth About Cloud Java Stack"
+        >
+          <Image src={images.truthJavaContainers} />
+        </PlovDevSlide>
+        <PlovDevSlide transition={["fade"]} textColor="tertiary">
+          <Heading size={1} fit bold caps>
+            What To Do?
+          </Heading>
+        </PlovDevSlide>
+        <PlovDevSlide
+          transition={["fade"]}
+          textColor="tertiary"
+          title="Optimizations"
+        >
+          <Layout>
+            <Fill>
+              <Markdown>
+                {`
+What's going on start time?
+- Parse config files
+- Classpath and classes scanning
+- Build metamodel in memory
+- Prepare reflection and build proxies
+- Start and open IO, threads, etc.
+                `}
+              </Markdown>
+            </Fill>
+            <Fit style={{ verticalAlign: "center" }}>⇶</Fit>
+            <Fill>
+              <Markdown>
+                {`
+What could be optimized?
+- Build Time Metadata Processing
+- Reduction in Reflection Usage
+- First Class Support for GraalVM
+- Native Image Pre Boot
+                `}
+              </Markdown>
+            </Fill>
+          </Layout>
+        </PlovDevSlide>
+        <PlovDevSlide transition={["fade"]} bgColor="black" dark>
+          <Image src={images.quarkusMetrics} />
+        </PlovDevSlide>
+
         <PlovDevSlide transition={["fade"]}>
           <Heading size={4}>
             <InlineImage src={images.springLogo} height="4rem" /> Spring Boot
