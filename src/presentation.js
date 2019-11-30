@@ -134,7 +134,7 @@ export default class Presentation extends React.Component {
         <PlovDevSlide
           transition={["fade"]}
           textColor="tertiary"
-          title="Optimizations"
+          title="Moving to Compile-Time Boot"
         >
           <Layout>
             <Fill>
@@ -291,6 +291,11 @@ What could be optimized?
               ></CodePane>
             </Fill>
           </Layout>
+        </PlovDevSlide>
+        <PlovDevSlide transition={["zoom"]} bgColor="primary">
+          <Heading size={1} fit caps textColor="secondary">
+            Demo
+          </Heading>
         </PlovDevSlide>
       </Deck>
     );
