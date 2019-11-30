@@ -3,7 +3,6 @@ import {
   Deck,
   Heading,
   Text,
-  Fit,
   Layout,
   Image,
   Table,
@@ -14,10 +13,9 @@ import {
   TableItem,
   Link,
   Appear,
-  List,
-  ListItem,
   Fill,
-  Markdown
+  Markdown,
+  CodePane
 } from "spectacle";
 import createTheme from "spectacle/lib/themes/default";
 import preloader from "spectacle/lib/utils/preloader";
@@ -38,16 +36,36 @@ const theme = createTheme(
   }
 );
 
+theme.screen.components.text.textAlign = "left";
+theme.screen.components.list = {
+  textAlign: "left",
+  listStylePosition: "initial"
+};
+theme.screen.components.tableItem = {
+  textAlign: "left",
+  fontSize: "2rem",
+  borderBottom: "gray dashed 2px",
+  verticalAlign: "top",
+  padding: "0.5rem"
+};
+theme.screen.components.tableHeaderItem = {
+  borderBottom: "gray dashed 2px",
+  padding: "0.5rem",
+  ...theme.screen.components.tableHeaderItem
+};
+theme.screen.components.codePane.fontSize = "1.5rem";
+
 const images = {
-  springLogo: require("./img/spring-logo.svg"),
-  quarkusLogo: require("./img/quarkus-logo.svg"),
-  cloudComputingTimeline: require("./img/cloud-computing-timeline.png"),
-  cloudComputingServices: require("./img/cloud-computing-services.svg"),
-  truthJavaContainers: require("./img/truth-java-containers.png"),
-  historicalEnterpriseStack: require("./img/historical-enterprise-stack.png"),
-  moderEenterpriseStack: require("./img/modern-enterprise-stack.png"),
-  newTruthJavaContainers: require("./img/new-truth-java-containers.png"),
-  quarkusMetrics: require("./img/quarkus-metrics.png")
+  springLogo: require("./assets/spring-boot-logo.svg"),
+  quarkusLogo: require("./assets/quarkus-logo.svg"),
+  cloudComputingTimeline: require("./assets/cloud-computing-timeline.png"),
+  cloudComputingServices: require("./assets/cloud-computing-services.svg"),
+  truthJavaContainers: require("./assets/truth-java-containers.png"),
+  historicalEnterpriseStack: require("./assets/historical-enterprise-stack.png"),
+  moderEenterpriseStack: require("./assets/modern-enterprise-stack.png"),
+  newTruthJavaContainers: require("./assets/new-truth-java-containers.png"),
+  quarkusMetrics: require("./assets/quarkus-metrics.png"),
+  quarkusStack: require("./assets/quarkus-stack.png")
 };
 
 preloader(images);
@@ -131,28 +149,45 @@ What's going on start time?
                 `}
               </Markdown>
             </Fill>
-            <Fit style={{ verticalAlign: "center" }}>⇶</Fit>
-            <Fill>
-              <Markdown>
-                {`
+            <Appear>
+              <Fill>
+                <Markdown>
+                  {`
 What could be optimized?
 - Build Time Metadata Processing
 - Reduction in Reflection Usage
 - First Class Support for GraalVM
 - Native Image Pre Boot
                 `}
-              </Markdown>
-            </Fill>
+                </Markdown>
+              </Fill>
+            </Appear>
           </Layout>
+        </PlovDevSlide>
+        <PlovDevSlide
+          transition={["fade"]}
+          textColor="tertiary"
+          title="Quarkus Java Stack"
+        >
+          <Image src={images.quarkusStack} />
         </PlovDevSlide>
         <PlovDevSlide transition={["fade"]} bgColor="black" dark>
           <Image src={images.quarkusMetrics} />
         </PlovDevSlide>
-
-        <PlovDevSlide transition={["fade"]}>
-          <Heading size={4}>
-            <InlineImage src={images.springLogo} height="4rem" /> Spring Boot
+        <PlovDevSlide
+          transition={["fade"]}
+          textColor="tertiary"
+          title="The Quarkus Reality"
+        >
+          <Image src={images.newTruthJavaContainers} />
+        </PlovDevSlide>
+        <PlovDevSlide transition={["fade"]} textColor="tertiary">
+          <Heading size={1} style={{ verticalAlign: "middle" }}>
+            <InlineImage src={images.quarkusLogo} height="260px" /> vs{" "}
+            <InlineImage src={images.springLogo} height="260px" />
           </Heading>
+        </PlovDevSlide>
+        <PlovDevSlide transition={["fade"]}>
           <Table>
             <TableHeader>
               <TableRow>
@@ -237,11 +272,25 @@ What could be optimized?
             </TableBody>
           </Table>
         </PlovDevSlide>
-        <PlovDevSlide>
-          <Heading size={3}>Quarkus</Heading>
-          <List>
-            <ListItem>Build om top of </ListItem>
-          </List>
+        <PlovDevSlide title="Unifies Imperative and Reactive">
+          <Layout>
+            <Fill>
+              <CodePane
+                padding="10px"
+                theme="light"
+                lang="jsx"
+                source={require("./assets/imperative.example")}
+              ></CodePane>
+            </Fill>
+            <Fill>
+              <CodePane
+                padding="10px"
+                theme="light"
+                lang="jsx"
+                source={require("./assets/reactive.example")}
+              ></CodePane>
+            </Fill>
+          </Layout>
         </PlovDevSlide>
       </Deck>
     );

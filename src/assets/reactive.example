@@ -1,0 +1,8 @@
+@Inject @Channel("kafka")
+Publisher<String> reactiveSay;
+
+@GET
+@Produces(MediaType.SERVER_SENT_EVENTS)
+public Publisher<String> stream() {
+    return reactiveSay;
+}
