@@ -3,8 +3,8 @@ import { Slide, Layout, Image, Fill, Heading } from "spectacle";
 import preloader from "spectacle/lib/utils/preloader";
 
 const images = {
-  plovDevLogoDark: require("../img/plovdev-logo-dark.png"),
-  plovDevLogoLight: require("../img/plovdev-logo-light.svg")
+  plovDevLogoDark: require("../assets/plovdev-logo-dark.png"),
+  plovDevLogoLight: require("../assets/plovdev-logo-light.svg")
 };
 
 preloader(images);
