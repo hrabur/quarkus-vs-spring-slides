@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/quarkus-vs-spring-slides/precache-manifest.31c49b552e53ab2ef2988cc09d2be770.js"
+  "/quarkus-vs-spring-slides/precache-manifest.1fe73e891787d38702da6b6e2a422b66.js"
 );
 
 workbox.clientsClaim();

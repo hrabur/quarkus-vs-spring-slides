@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/quarkus-vs-spring-slides/static/media/cloud-computing-timeline.fdaa80c6.png"
   },
   {
-    "revision": "8cfa353824a5de0968d6",
-    "url": "/quarkus-vs-spring-slides/static/js/main.8cfa3538.chunk.js"
+    "revision": "e21e44a86af9bc45844d",
+    "url": "/quarkus-vs-spring-slides/static/js/main.e21e44a8.chunk.js"
   },
   {
     "revision": "ec0a0d7ec3c63c14f875b0fa385d1154",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/quarkus-vs-spring-slides/static/css/1.2bea53bd.chunk.css"
   },
   {
-    "revision": "1850f44a406d10b57e83fd1c9b38fc5d",
+    "revision": "5dd2336a4131b816411c64ad6d52e356",
     "url": "/quarkus-vs-spring-slides/index.html"
   }
 ];
